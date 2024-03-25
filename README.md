@@ -8,8 +8,8 @@ Para executar e testar os endpoints, siga os passos:
 - Ao ver a mensagem `Started BeneficiarioServiceApplication in ### seconds (process running for ###)`, saberá que o sistema está no ar;
 - No navegador, acesse o endereço `http://localhost:8080/swagger-ui/index.html#/`;
 - No swagger haverá a lista de endpoints, faça o cadastro de um usuário acessando `/usuario/criar`, siga o modelo Json ali proposto. Para o campo `role`, entre com o valor `ROLE_ATENDENTE` ou `ROLE_FINANCEIRO`. Faça ao menos um usuário para cada `role`, pois alguns endpoints são exclusivos a cada um deles.
-- Faça o login no endpoint `/usuario/login`. A reposta da requisição virá co mo bearer token de acesso à api. Apemas esses dois endpoints no caminho `/usuario` não são protegidos;
-- Copie o bearer token para a área de transferência e no swagger - no canto superior direito, clique no botão `Authorize`, com o ícone de um cadeado. Na caixa de diálogo que será aberta, cole o bearer token no campo `value` e clique no botão `Authorize`. Então suas requisições incluirão o token no cabeçalho, permitindo o acesso aos endpoints do caminho `/beneficiario`;
+- Faça o login no endpoint `/usuario/login`. A reposta da requisição virá com o bearer token de acesso à api. Apenas esses dois endpoints no caminho `/usuario` não são protegidos;
+- Copie o bearer token para a área de transferência e no swagger - no canto superior direito - clique no botão `Authorize`, com o ícone de um cadeado. Na caixa de diálogo que será aberta, cole o bearer token no campo `value` e clique no botão `Authorize`. Então suas requisições incluirão o token no cabeçalho, permitindo o acesso aos endpoints do caminho `/beneficiario`;
 - As funções possíveis são:
 	- listar todos os beneficiários (`ROLE_FINANCEIRO / ROLE_ATENDENTE`);
 	- cadastrar beneficiário (`ROLE_FINANCEIRO`);
